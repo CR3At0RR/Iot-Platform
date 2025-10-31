@@ -25,10 +25,11 @@ const HomeDashboard = () => {
       },
       {
         type: 'chart',
-        size: 'large',
+        size: 'full',
         props: {
           title: 'Device Activity',
           data: [12, 19, 3, 5, 2, 3],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
         },
       },
       {

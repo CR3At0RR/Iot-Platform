@@ -1,5 +1,27 @@
+
+'use client';
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/app/components/ui/card/card';
+import { Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 // Sample widget components
 const StatWidget = ({ title = '', value = '', description = '' }) => (
@@ -14,18 +36,48 @@ const StatWidget = ({ title = '', value = '', description = '' }) => (
   </Card>
 );
 
-const ChartWidget = ({ title = '', data = [] }) => (
-  <Card className="h-full">
-    <CardHeader>
-      <CardTitle className="text-sm font-medium">{title}</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <div className="h-48 flex items-center justify-center bg-gray-100 rounded">
-        Chart Placeholder: {data.join(', ')}
-      </div>
-    </CardContent>
-  </Card>
-);
+const ChartWidget = ({ title = '', data = [], labels = [] }) => {
+  const chartData = {
+    labels,
+    datasets: [
+      {
+        label: title,
+        data,
+        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top' as const,
+      },
+      title: {
+        display: true,
+        text: title,
+      },
+    },
+    maintainAspectRatio: false,
+  };
+
+  return (
+    <Card className="h-full">
+      <CardHeader>
+        <CardTitle className="text-sm font-medium">{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="relative h-48">
+          <Bar data={chartData} options={options} />
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
 
 const ListWidget = ({ title = '', items = [] }) => (
   <Card className="h-full">

@@ -1,8 +1,9 @@
 # IoT Platform
 
 A modern and responsive web application for monitoring and managing Internet of Things (IoT) devices, built with Next.js.
+Currently it is a very basic code. Will be developing it later. Currently on hold.
 
-**Live Demo:** [Link to your deployed project]
+**Live Demo:** [https://CypherWave](https://iot-platform-9k5m.vercel.app/home)
 
 ## Features
 
