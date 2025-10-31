@@ -1,0 +1,1573 @@
+{
+    "userProfile": {},
+    "products": {
+      "p1": "productId"
+    },
+    "entityAliases": {
+      "aliasName0": {
+        "type": "DEVICE",
+        "id": "7c12c2f0-1840-11eb-aab1-0fcdc35862ce"
+      },
+      "aliasName1": {
+        "type": "DEVICE",
+        "id": ["7c12c2f0-1840-11eb-aab1-0fcdc35862ce","21024d10-0245-11eb-8005-55aad5cb20e7"]
+      }
+    },
+    "dashboards": {
+      "productId0": {
+        "states": [
+          {
+            "name": "",
+            "title": "Summary",
+            "widgets": {
+              "count": "10"
+            },
+            "dashboard": {
+              "GridsterItem": [
+                {
+                  "id": "uuid0",
+                  "aliasName": { "aliasName0": ["EFF_Efficiency"] },
+                  "type": "singleCard",
+                  "unit": "",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 0,
+                  "parentContainer": "<div class='staticCard card1'><h5 class='cardTitle'>Direct Efficiency</h5><h4 class='cardValue greenText aliasName0-EFF_Efficiency'>70</h4><h4 class='unitSpan cardValue greenText'> %</h4></div>"
+                },
+                {
+                  "aliasName": {
+                    "aliasName0": [
+                      "EFF_Steam_Flow_Total",
+                      "EFF_Fuel_Flow_Total",
+                      "EFF_SF_Ratio"
+                    ]
+                  },
+                  "key": [
+                    "EFF_Steam_Flow_Total",
+                    "EFF_Fuel_Flow_Total",
+                    "EFF_SF_Ratio"
+                  ],
+                  "type": "comboCard",
+                  "unit": "",
+                  "cols": 2,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 1,
+                  "parentContainer": "<div class='comboCard card2'><div class='multCard value1'><h5 class='cardTitle'>Steam Total</h5><h4 class='cardValue aliasName0-EFF_Steam_Flow_Total'>200</h4>  <h4 class='cardValue '> kg</h4> </div><div class='multCard value2'><h5 class='cardTitle'>Fuel Total</h5><h4 class='cardValue aliasName0-EFF_Fuel_Flow_Total'>7,006 </h4> <h4 class='cardValue '> kg</h4></div><div class='multCard value3'><h5 class='cardTitle'>S:F Ratio</h5><h4 class='cardValue aliasName0-EFF_SF_Ratio'>12.0</h4></div></div>"
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Stack_O2"] },
+                  "key": "EFF_Stack_O2",
+                  "type": "singleCard",
+                  "unit": "",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 3,
+                  "parentContainer": "<div class='staticCard card3'><h5 class='cardTitle'>Steam Dryness</h5><h4 class='cardValue aliasName0-EFF_Stack_O2'>11</h4><h4 class='cardValue'> %</h4></div>"
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Stack_O2"] },
+                  "key": "EFF_Stack_O2",
+                  "type": "singleCard",
+                  "unit": "",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 4,
+                  "parentContainer": "<div class='staticCard card4'><h5 class='cardTitle'>Oxygen</h5><h4 class='cardValue aliasName0-EFF_Stack_O2'>4.2</h4><h4 class='unitSpan cardValue'> Units</h4> </div>"
+                },
+                {
+                  "aliasName": {
+                    "aliasName0": [
+                      "EFF_Enthalpy_Loss",
+                      "EFF_Blowdown_Loss",
+                      "EFF_Radiation_Loss",
+                      "EFF_Stack_Loss"
+                    ]
+                  },
+                  "key": [
+                    "EFF_Enthalpy_Loss",
+                    "EFF_Blowdown_Loss",
+                    "EFF_Radiation_Loss",
+                    "EFF_Stack_Loss"
+                  ],
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 1,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bar",
+                  "chartHeader": "Losses",
+                  "chartValue": "15.2 %",
+                  "unit": "%",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "colors": ["#60C2FF", "#4ADEDE", "#14A5FF", "#9294F5"],
+                    "chart": {
+                      "type": "bar"
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "categories": [
+                        "Enthalpy",
+                        "Blowdown",
+                        "Radiation",
+                        "Stack"
+                      ],
+                      "title": {
+                        "text": null
+                      },
+                      "labels": {
+                        "style": {
+                          "fontSize": "14px"
+                        }
+                      }
+                    },
+                    "yAxis": {
+                      "min": 0,
+                      "visible": false
+                    },
+                    "tooltip": {
+                      "valueSuffix": "%"
+                    },
+                    "plotOptions": {
+                      "bar": {
+                        "colorByPoint": true,
+                        "borderRadius": 5,
+                        "dataLabels": {
+                          "enabled": true,
+                          "format": "{y}%"
+                        }
+                      }
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "credits": {
+                      "enabled": false
+                    },
+                    "series": [
+                      {
+                        "name": [
+                          "aliasName0-EFF_Enthalpy_Loss",
+                          "aliasName0-EFF_Blowdown_Loss",
+                          "aliasName0-EFF_Radiation_Loss",
+                          "aliasName0-EFF_Stack_Loss"
+                        ],
+                        "data": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Steam_Pressure"] },
+                  "key": "EFF_Steam_Pressure",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 1,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Steam Pressure",
+                  "chartValue": "9.0 bar",
+                  "unit": "bar",
+                  "arearange": true,
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "maintainAspectRatio": false,
+                    "responsive": true,
+                    "chart": {
+                      "zoomType": "x"
+                    },
+  
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "labels": {
+                        "formatter": "return this.value.getHours().toString().padStart(2, '0')+':'+this.value.getMinutes().toString().padStart(2, '0')"
+                      },
+                      "tickInterval": 180
+                    },
+                    "yAxis": {
+                      "title": {
+                        "text": null
+                      }
+                    },
+                    "tooltip": {
+                      "crosshairs": true,
+                      "shared": true,
+                      "valueSuffix": "bar"
+                    },
+                    "plotOptions": {},
+                    "series": [
+                      {
+                        "name": "Steam Pressure",
+                        "data": [],
+                        "zIndex": 1,
+                        "marker": {
+                          "enabled": false
+                        },
+                        "color": "rgba(13, 18, 80, 1)"
+                      },
+                      {
+                        "type": "arearange",
+                        "data": [],
+                        "lineWidth": 1,
+                        "lineColor": "red",
+                        "dashStyle": "dash",
+                        "linkedTo": ":previous",
+                        "fillOpacity": 0.2,
+                        "zIndex": 0,
+                        "marker": {
+                          "enabled": false
+                        },
+                        "color": "rgba(78, 210, 127, 0.1);"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Steam_Flow_Total"] },
+                  "key": "EFF_Steam_Flow_Total",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 4,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Current Steam Flow",
+                  "chartValue": "4200 kg/h",
+                  "unit": "kg/h",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "labels": {
+                        "formatter": "return this.value.getHours().toString().padStart(2, '0')+':'+this.value.getMinutes().toString().padStart(2, '0')"
+                      },
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillColor": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "y1": 0,
+                            "x2": 0,
+                            "y2": 1
+                          },
+                          "stops": [
+                            [0, "#60C2FF66"],
+                            [1, "#FFFFFF"]
+                          ]
+                        },
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "Current Steam",
+                        "data": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_FeedWater_Temp"] },
+                  "key": "EFF_FeedWater_Temp",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 4,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Feed Water Temperature",
+                  "chartValue": "80 °C",
+                  "unit": "°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "events": {
+                        "redraw": true
+                      },
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "labels": {
+                        "formatter": "return this.value.getHours().toString().padStart(2, '0')+':'+this.value.getMinutes().toString().padStart(2, '0')"
+                      },
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillOpacity": 0,
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "Feed Water",
+                        "data": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Fuel_Flow_Total"] },
+                  "key": "EFF_Fuel_Flow_Total",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 7,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Current Fuel Flow",
+                  "chartValue": "650 kg/h",
+                  "unit": "kg/h",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "labels": {
+                        "formatter": "return this.value.getHours().toString().padStart(2, '0')+':'+this.value.getMinutes().toString().padStart(2, '0')"
+                      },
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillColor": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "y1": 0,
+                            "x2": 0,
+                            "y2": 1
+                          },
+                          "stops": [
+                            [0, "#60C2FF66"],
+                            [1, "#FFFFFF"]
+                          ]
+                        },
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "Current Fuel",
+                        "data": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Stack_Temp"] },
+                  "key": "EFF_Stack_Temp",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 7,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bullet",
+                  "chartHeader": "Stack Temperature",
+                  "chartValue": "220°C",
+                  "unit": "°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "type": "bullet",
+                      "height": "125px",
+                      "marginTop": 10,
+                      "marginRight": 50
+                    },
+                    "credits": {
+                      "enabled": false
+                    },
+                    "exporting": {
+                      "enabled": false
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "tickLength": 0,
+                      "labels": {
+                        "enabled": false
+                      }
+                    },
+                    "yAxis": {
+                      "gridLineWidth": 1,
+                      "labels": {
+                        "y": 10,
+                        "style": {
+                          "fontSize": "8px"
+                        }
+                      },
+                      "plotBands": [
+                        {
+                          "from": 0,
+                          "to": 300,
+                          "color": "rgba(204,204,204,.35)"
+                        }
+                      ]
+                    },
+                    "series": [
+                      {
+                        "name": "Measure",
+                        "pointWidth": 40,
+  
+                        "data": [120],
+  
+                        "type": "bar",
+                        "color": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "x2": 0,
+                            "y1": 1,
+                            "y2": 0
+                          },
+                          "stops": [
+                            [0.65, "rgba(96, 194, 255, 1)"],
+                            [1, "rgba(255, 92, 107, 1)"]
+                          ]
+                        }
+                      },
+                      {
+                        "name": "Target",
+                        "type": "scatter",
+                        "data": [240]
+                      }
+                    ],
+                    "plotOptions": {
+                      "bar": {
+                        "color": "#60C2FF",
+                        "shadow": false,
+                        "borderWidth": 0
+                      },
+                      "scatter": {
+                        "marker": {
+                          "symbol": "url(../../assets/images/Vector.png)"
+                        }
+                      }
+                    },
+                    "tooltip": {
+                      "enabled": true,
+                      "bac kgroundColor": "rgba(255, 255, 255, .85)",
+                      "borderWidth": 0,
+                      "shadow": true
+                    }
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Steam_Temp"] },
+                  "key": "EFF_Steam_Temp",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 10,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bullet",
+                  "chartHeader": "Steam Temperature",
+                  "chartValue": "190°C",
+                  "unit": "°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "type": "bullet",
+                      "height": "145px",
+                      "marginTop": 50,
+                      "marginRight": 50
+                    },
+                    "credits": {
+                      "enabled": false
+                    },
+                    "exporting": {
+                      "enabled": false
+                    },
+                    "legend": {
+                      "enabled": true,
+                      "title": {
+                        "text": "<br/><mat-icon mat-list-icon class='customIcon'><span class='material-symbols-outlined'>warning</span></mat-icon>Warning"
+                      },
+                      "layout": "vertical",
+                      "align": "center",
+                      "verticalAlign": "bottom",
+                      "x": 10,
+                      "y": 100
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "tickLength": 0,
+                      "labels": {
+                        "enabled": false
+                      }
+                    },
+                    "yAxis": {
+                      "gridLineWidth": 0,
+                      "labels": {
+                        "y": 10,
+                        "style": {
+                          "fontSize": "8px"
+                        }
+                      },
+                      "plotBands": [
+                        {
+                          "from": 0,
+                          "to": 300,
+                          "color": {
+                            "linearGradient": {
+                              "x1": 0,
+                              "x2": 1,
+                              "y1": 0,
+                              "y2": 0
+                            },
+                            "stops": [
+                              [0, "rgba(255, 38, 58, 0.5)"],
+                              [0.18, "rgba(252, 222, 15, 0.5)"],
+                              [0.49, "rgba(78, 210, 127, 0.5)"],
+                              [0.8, "rgba(252, 222, 15, 0.5)"],
+                              [1, "rgba(255, 38, 58, 0.5)"]
+                            ]
+                          },
+                          "zIndex": 1
+                        }
+                      ]
+                    },
+                    "series": [
+                      {
+                        "name": "Measure",
+                        "pointWidth": 10,
+                        "type": "bar"
+                      },
+                      {
+                        "name": "Target",
+                        "type": "scatter",
+                        "data": []
+                      }
+                    ],
+                    "plotOptions": {
+                      "bar": {
+                        "color": "#60C2FF",
+                        "shadow": false,
+                        "borderWidth": 0
+                      },
+                      "scatter": {
+                        "marker": {
+                          "symbol": "url(../../assets/images/Vector2.png)"
+                        }
+                      }
+                    },
+                    "tooltip": {
+                      "enabled": true,
+                      "backgroundColor": "rgba(255, 255, 255, .85)",
+                      "borderWidth": 0,
+                      "shadow": true
+                    }
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["EFF_Steam_Pressure"] },
+                  "key": "EFF_Steam_Pressure",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 10,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Fuel Pressure",
+                  "chartValue": "9.0 bar",
+                  "unit": "bar",
+                  "arearange": true,
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "maintainAspectRatio": false,
+                    "responsive": true,
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "accessibility": {
+                        "rangeDescription": "Range: Jul 1st 2022 to Jul 31st 2022."
+                      },
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "labels": {
+                        "formatter": "return this.value.getHours().toString().padStart(2, '0')+':'+this.value.getMinutes().toString().padStart(2, '0')"
+                      },
+                      "tickInterval": 180
+                    },
+                    "yAxis": {
+                      "title": {
+                        "text": null
+                      }
+                    },
+                    "tooltip": {
+                      "crosshairs": true,
+                      "shared": true,
+                      "valueSuffix": "bar"
+                    },
+                    "plotOptions": {},
+                    "series": [
+                      {
+                        "name": "Fuel Pressure",
+                        "data": [],
+                        "zIndex": 1,
+                        "marker": {
+                          "enabled": false
+                        },
+                        "color": "rgba(13, 18, 80, 1)"
+                      },
+                      {
+                        "type": "arearange",
+                        "data": [],
+                        "lineWidth": 1,
+                        "lineColor": "red",
+                        "dashStyle": "dash",
+                        "linkedTo": ":previous",
+                        "fillOpacity": 0.2,
+                        "zIndex": 0,
+                        "marker": {
+                          "enabled": false
+                        },
+                        "color": "rgba(78, 210, 127, 0.1);"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "aliasName": { "aliasName0": ["Efficiency", "", ""] },
+                  "key": ["Efficiency", "", ""],
+  
+                  "cols": 5,
+                  "rows": 3,
+                  "y": 13,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "threefield",
+                  "chartHeader": "Steam Generation",
+                  "chartValue": "",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "xy"
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": [
+                      {
+                        "dateTimeLabelFormats": {
+                          "day": "%H:%M"
+                        },
+                        "categories": [],
+                        "tickInterval": 180,
+                        "crosshair": true
+                      }
+                    ],
+                    "yAxis": [
+                      {
+                        "labels": {
+                          "format": "{value}%"
+                        },
+                        "title": {
+                          "text": "Steam Generation"
+                        }
+                      },
+                      {
+                        "title": {
+                          "text": "Fuel Consumption"
+                        },
+                        "labels": {
+                          "format": "{value} kg"
+                        },
+                        "opposite": true
+                      }
+                    ],
+                    "tooltip": {
+                      "shared": true
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "series": [
+                      {
+                        "name": "Steam Generation",
+                        "type": "column",
+                        "yAxis": 1,
+                        "data": [
+                          27.6, 28.8, 21.7, 34.1, 29.0, 28.4, 45.6, 51.7, 39.0,
+                          60.0, 28.6, 32.1
+                        ],
+                        "tooltip": {
+                          "valueSuffix": " kg"
+                        }
+                      },
+                      {
+                        "name": "Fuel Consumption",
+                        "type": "column",
+                        "yAxis": 1,
+                        "data": [
+                          24.6, 24.8, 28.7, 31.1, 26.0, 25.4, 42.6, 58.7, 35.0,
+                          62.0, 24.6, 30.1
+                        ],
+                        "tooltip": {
+                          "valueSuffix": " kg"
+                        }
+                      },
+                      {
+                        "name": "Efficiency",
+                        "type": "spline",
+                        "data": [
+                          -13.6, -14.9, -5.8, -0.7, 3.1, 13.0, 14.5, 10.8, 5.8,
+                          -0.7, -11.0, -16.4
+                        ],
+                        "tooltip": {
+                          "valueSuffix": "%"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "",
+            "title": "Boiler 1",
+            "status": "active",
+            "widgets": {},
+            "dashboard": {
+              "GridsterItem": [
+                {
+                  "key": "Efficiency",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 0,
+                  "parentContainer": "<div class='staticCard card1'><h5 class='cardTitle'>Direct Efficiency</h5><h4 class='cardValue greenText'>78 %</h4></div>"
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 2,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 1,
+                  "parentContainer": "<div class='comboCard card2'><div class='multCard value1'><h5 class='cardTitle'>Steam Total</h5><h4 class='cardValue'>84,080 kg</h4></div><div class='multCard value2'><h5 class='cardTitle'>Fuel Total</h5><h4 class='cardValue'>7,006 kg</h4></div><div class='multCard value3'><h5 class='cardTitle'>S:F Ration</h5><h4 class='cardValue'>12.001</h4></div></div>"
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 3,
+                  "parentContainer": "<div class='staticCard card3'><h5 class='cardTitle'>Steam Dryness</h5><h4 class='cardValue'>90.4 %</h4></div>"
+                },
+                {
+                  "key": "EFF_Stack_O2",
+                  "cols": 1,
+                  "rows": 1,
+                  "y": 0,
+                  "x": 4,
+                  "parentContainer": "<div class='staticCard card4'><h5 class='cardTitle'>Oxygen</h5><h4 class='cardValue'>4.2</h4></div>"
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 10,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bar",
+                  "chartHeader": "Losses",
+                  "chartValue": "15.2 %",
+                  "unit": "%",
+                  "labels": ["Enthalpy", "Blowdown", "Radiation", "Stack"],
+                  "datasets": [
+                    {
+                      "bac kgroundColor": [
+                        "#60C2FF",
+                        "#4ADEDE",
+                        "#14A5FF",
+                        "#9294F5"
+                      ],
+                      "data": [1.4, 0.2, 1.5, 12.1]
+                    }
+                  ],
+                  "options": {
+                    "maintainAspectRatio": false,
+                    "responsive": true,
+                    "barThickness": 25,
+                    "borderRadius": 5,
+                    "indexAxis": "y",
+                    "plugins": {
+                      "datalabels": {
+                        "formatter": "return value + '%';",
+                        "align": "end",
+                        "anchor": "end",
+                        "borderRadius": 4,
+                        "color": "#0D1250",
+                        "font": {
+                          "weight": "normal"
+                        }
+                      },
+                      "legend": {
+                        "display": false,
+                        "labels": {
+                          "color": "#495057",
+                          "display": false
+                        }
+                      }
+                    },
+                    "scales": {
+                      "x": {
+                        "barPercentage": 1,
+                        "categoryPercentage": 1,
+                        "ticks": {
+                          "color": "#495057",
+                          "display": false
+                        },
+                        "grid": {
+                          "color": "#ebedef",
+                          "display": false,
+                          "border": false,
+                          "drawBorder": false
+                        }
+                      },
+                      "y": {
+                        "ticks": {
+                          "color": "#495057",
+                          "font": {
+                            "family": "Open Sans",
+                            "size": "14px",
+                            "weight": 400
+                          }
+                        },
+                        "grid": {
+                          "color": "#ebedef",
+                          "display": false
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 1,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Steam Pressure",
+                  "chartValue": "9.0 bar",
+                  "labels": [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July"
+                  ],
+                  "datasets": [
+                    {
+                      "borderColor": "#FF5C6B",
+                      "data": [3, 3, 3, 3, 3, 3, 3],
+                      "fill": false,
+                      "borderDash": [5, 5]
+                    },
+                    {
+                      "borderColor": "#0D1250",
+                      "data": [4, 5, 5, 4.5, 5, 6, 7],
+                      "tension": 0.4
+                    },
+                    {
+                      "borderColor": "#FF5C6B",
+                      "data": [9, 9, 9, 9, 9, 9, 9],
+                      "fill": true,
+                      "bac kgroundColor": "rgba(78, 210, 127, 0.1)",
+                      "borderDash": [5, 5]
+                    }
+                  ],
+                  "options": {
+                    "responsive": true,
+                    "maintainAspectRatio": false,
+                    "plugins": {
+                      "datalabels": {
+                        "display": false
+                      },
+                      "legend": {
+                        "display": false
+                      }
+                    },
+                    "scales": {
+                      "x": {
+                        "ticks": {
+                          "color": "#495057"
+                        },
+                        "grid": {
+                          "color": "#ebedef"
+                        }
+                      },
+                      "y": {
+                        "ticks": {
+                          "color": "#495057"
+                        },
+                        "grid": {
+                          "color": "#ebedef",
+                          "display": false
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 4,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Current Steam Flow",
+                  "chartValue": "4200 kg/h",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillColor": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "y1": 0,
+                            "x2": 0,
+                            "y2": 1
+                          },
+                          "stops": [
+                            [0, "#60C2FF66"],
+                            [1, "#FFFFFF"]
+                          ]
+                        },
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "",
+                        "data": [65, 59, 80, 81, 56, 55, 40]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 7,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Feed Water Temperature",
+                  "chartValue": "80°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillOpacity": 0,
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "",
+                        "data": [65, 59, 80, 81, 56, 55, 40]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 7,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Current Fuel Flow",
+                  "chartValue": "650 kg/h",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "x"
+                    },
+                    "xAxis": {
+                      "type": "datetime",
+                      "dateTimeLabelFormats": {
+                        "day": "%H:%M"
+                      },
+                      "categories": [],
+                      "tickInterval": 180
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "yAxis": {},
+                    "legend": {
+                      "enabled": false
+                    },
+                    "plotOptions": {
+                      "area": {
+                        "fillColor": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "y1": 0,
+                            "x2": 0,
+                            "y2": 1
+                          },
+                          "stops": [
+                            [0, "#60C2FF66"],
+                            [1, "#FFFFFF"]
+                          ]
+                        },
+                        "marker": {
+                          "radius": 2
+                        },
+                        "lineWidth": 1,
+                        "states": {
+                          "hover": {
+                            "lineWidth": 1
+                          }
+                        },
+                        "threshold": null
+                      }
+                    },
+                    "series": [
+                      {
+                        "type": "area",
+                        "name": "",
+                        "data": [65, 59, 80, 81, 56, 55, 40]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": "EFF_Stack_Temp",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 1,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bullet",
+                  "chartHeader": "Stack Temperature",
+                  "chartValue": "220°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "type": "bullet",
+                      "height": "125px",
+                      "marginTop": 20,
+                      "marginRight": 50
+                    },
+                    "credits": {
+                      "enabled": false
+                    },
+                    "exporting": {
+                      "enabled": false
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "tickLength": 0,
+                      "labels": {
+                        "enabled": false
+                      }
+                    },
+                    "yAxis": {
+                      "gridLineWidth": 1,
+                      "labels": {
+                        "y": 10,
+                        "style": {
+                          "fontSize": "8px"
+                        }
+                      },
+                      "plotBands": [
+                        {
+                          "from": 0,
+                          "to": 100,
+                          "color": "rgba(204,204,204,.35)"
+                        }
+                      ]
+                    },
+                    "series": [
+                      {
+                        "name": "Measure",
+                        "pointWidth": 20,
+                        "data": [],
+                        "type": "bar",
+                        "color": {
+                          "linearGradient": {
+                            "x1": 0,
+                            "x2": 0,
+                            "y1": 1,
+                            "y2": 0
+                          },
+                          "stops": [
+                            [0.65, "rgba(96, 194, 255, 1)"],
+                            [1, "rgba(255, 92, 107, 1)"]
+                          ]
+                        }
+                      },
+                      {
+                        "name": "Target",
+                        "type": "scatter",
+                        "data": [60]
+                      }
+                    ],
+                    "plotOptions": {
+                      "bar": {
+                        "color": "#60C2FF",
+                        "shadow": false,
+                        "borderWidth": 0
+                      },
+                      "scatter": {
+                        "marker": {
+                          "symbol": "url(../../assets/images/Vector.png)"
+                        }
+                      }
+                    },
+                    "tooltip": {
+                      "enabled": true,
+                      "bac kgroundColor": "rgba(255, 255, 255, .85)",
+                      "borderWidth": 0,
+                      "shadow": true
+                    }
+                  }
+                },
+                {
+                  "key": "EFF_Steam_Temp",
+                  "cols": 2,
+                  "rows": 3,
+                  "y": 4,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "bullet",
+                  "chartHeader": "Steam Temperature",
+                  "chartValue": "190°C",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "type": "bullet",
+                      "height": "125px",
+                      "marginTop": 20,
+                      "marginRight": 50
+                    },
+                    "credits": {
+                      "enabled": false
+                    },
+                    "exporting": {
+                      "enabled": false
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": {
+                      "tickLength": 0,
+                      "labels": {
+                        "enabled": false
+                      }
+                    },
+                    "yAxis": {
+                      "gridLineWidth": 0,
+                      "labels": {
+                        "y": 10,
+                        "style": {
+                          "fontSize": "8px"
+                        }
+                      },
+                      "plotBands": [
+                        {
+                          "from": 0,
+                          "to": 100,
+                          "color": {
+                            "linearGradient": {
+                              "x1": 0,
+                              "x2": 1,
+                              "y1": 0,
+                              "y2": 0
+                            },
+                            "stops": [
+                              [0, "rgba(255, 38, 58, 0.5)"],
+                              [0.18, "rgba(252, 222, 15, 0.5)"],
+                              [0.49, "rgba(78, 210, 127, 0.5)"],
+                              [0.8, "rgba(252, 222, 15, 0.5)"],
+                              [1, "rgba(255, 38, 58, 0.5)"]
+                            ]
+                          },
+                          "zIndex": 1
+                        }
+                      ]
+                    },
+                    "series": [
+                      {
+                        "name": "Measure",
+                        "pointWidth": 10,
+                        "type": "bar"
+                      },
+                      {
+                        "name": "Target",
+                        "type": "scatter",
+                        "data": []
+                      }
+                    ],
+                    "plotOptions": {
+                      "bar": {
+                        "color": "#60C2FF",
+                        "shadow": false,
+                        "borderWidth": 0
+                      },
+                      "scatter": {
+                        "marker": {
+                          "symbol": "url(../../assets/images/Vector2.png)"
+                        }
+                      }
+                    },
+                    "tooltip": {
+                      "enabled": true,
+                      "bac kgroundColor": "rgba(255, 255, 255, .85)",
+                      "borderWidth": 0,
+                      "shadow": true
+                    }
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 3,
+                  "rows": 3,
+                  "y": 10,
+                  "x": 2,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Fuel Pressure",
+                  "chartValue": "9.0 bar",
+                  "labels": [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July"
+                  ],
+                  "datasets": [
+                    {
+                      "borderColor": "#FF5C6B",
+                      "data": [3, 3, 3, 3, 3, 3, 3],
+                      "fill": false,
+                      "borderDash": [5, 5]
+                    },
+                    {
+                      "borderColor": "#0D1250",
+                      "data": [4, 5, 5, 4.5, 5, 6, 7],
+                      "tension": 0.4
+                    },
+                    {
+                      "borderColor": "#FF5C6B",
+                      "data": [9, 9, 9, 9, 9, 9, 9],
+                      "fill": true,
+                      "bac kgroundColor": "rgba(78, 210, 127, 0.1)",
+                      "borderDash": [5, 5]
+                    }
+                  ],
+                  "options": {
+                    "responsive": true,
+                    "maintainAspectRatio": false,
+                    "plugins": {
+                      "datalabels": {
+                        "display": false
+                      },
+                      "legend": {
+                        "display": false
+                      }
+                    },
+                    "scales": {
+                      "x": {
+                        "ticks": {
+                          "color": "#495057"
+                        },
+                        "grid": {
+                          "color": "#ebedef"
+                        }
+                      },
+                      "y": {
+                        "ticks": {
+                          "color": "#495057"
+                        },
+                        "grid": {
+                          "color": "#ebedef",
+                          "display": false
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "key": "Efficiency",
+                  "cols": 5,
+                  "rows": 3,
+                  "y": 13,
+                  "x": 0,
+                  "parentContainer": "",
+                  "type": "chart",
+                  "chartType": "line",
+                  "chartHeader": "Steam Generation",
+                  "chartValue": "",
+                  "isHighcharts": true,
+                  "highOptions": {
+                    "chart": {
+                      "zoomType": "xy"
+                    },
+                    "title": {
+                      "text": null
+                    },
+                    "xAxis": [
+                      {
+                        "dateTimeLabelFormats": {
+                          "day": "%H:%M"
+                        },
+                        "categories": [],
+                        "tickInterval": 180,
+                        "crosshair": true
+                      }
+                    ],
+                    "yAxis": [
+                      {
+                        "labels": {
+                          "format": "{value} kg"
+                        },
+                        "title": {
+                          "text": "Steam Generation"
+                        }
+                      },
+                      {
+                        "title": {
+                          "text": "Fuel Consumption"
+                        },
+                        "labels": {
+                          "format": "{value} kg"
+                        },
+                        "opposite": true
+                      }
+                    ],
+                    "tooltip": {
+                      "shared": true
+                    },
+                    "legend": {
+                      "enabled": false
+                    },
+                    "series": [
+                      {
+                        "name": "Steam Generation",
+                        "type": "column",
+                        "yAxis": 1,
+                        "data": [
+                          27.6, 28.8, 21.7, 34.1, 29.0, 28.4, 45.6, 51.7, 39.0,
+                          60.0, 28.6, 32.1
+                        ],
+                        "tooltip": {
+                          "valueSuffix": " kg"
+                        }
+                      },
+                      {
+                        "name": "Fuel Consumption",
+                        "type": "spline",
+                        "data": [
+                          -13.6, -14.9, -5.8, -0.7, 3.1, 13.0, 14.5, 10.8, 5.8,
+                          -0.7, -11.0, -16.4
+                        ],
+                        "tooltip": {
+                          "valueSuffix": " kg"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "reports":{
+      "aliasNames": ["aliasName1", "aliasName2", "aliasName3"],
+      "keys":["EFF_Steam_Flow_Total", "EFF_Fuel_Flow_Total", "EFF_SF_Ratio", "EFF_Efficiency", "EFF_SF_Ratio"]
+    }
+  }
+  
