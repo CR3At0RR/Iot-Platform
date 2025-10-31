@@ -15,7 +15,7 @@ function Sidebar() {
   const [expandedRoutes, setExpandedRoutes] = useState<string[]>([]);
   
   const routes: Route[] = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'Devices', path: '/devices' },
     { 
       name: 'Dashboards', 
